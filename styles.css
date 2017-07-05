@@ -1,0 +1,508 @@
+body {
+  background: black;
+  font-size: 16px;
+  font-family: Arial, Helvetica Neue, sans-serif;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+iframe {
+  display: none;
+  margin: 4em 0;
+
+
+
+}
+
+/* Layout
+------------------------------------------*/
+
+header,
+.container,
+footer {
+  margin: 0 auto;
+  width: 88%;
+  max-width: 1080px;
+}
+
+header {
+  display:flex;
+  align-items:center;
+  padding: 2em 2em;
+  justify-content: space-between;
+
+}
+
+.box {
+  width:20%;
+}
+
+h1 {
+  width:70%;
+  font-family: helvetica;
+  font-size: 48px;
+  padding-bottom: .2em;
+
+}
+
+h1 {
+  color: rgb(20, 215, 96);
+}
+
+h2 {
+  color: #444444;
+}
+
+.box1 {
+  height:450px;
+  background-image: url(images/artback960.png);
+  background-size: cover;
+
+}
+
+
+
+
+
+
+.logogreen {
+
+  top:300px;
+  /*display: flex;
+  flex-wrap: wrap;*/
+}
+
+.two-column {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+p {
+  line-height: 1.5;
+  color: #555555;
+}
+
+ul {
+  padding:13px;
+  line-height: 1.5;
+  color: #555555;
+}
+
+@media screen and (min-width:48em) {
+  .two-column {
+    flex-wrap: wrap;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+  }
+  .first-column {
+    width: 60%;
+  }
+
+  .color-column {
+    width: 35%;
+
+  }
+
+
+}
+
+.no-bullets {
+  list-style: none;
+  padding: 0em;
+}
+.bullet {
+  height:16px;
+  width:16px;
+  background: url(images/bullet.png);
+  display: inline-block;
+  margin: 0em .3em -.1em 1em;
+
+
+
+}
+
+
+iframe {
+  width:600px;
+  height: 250px;
+  border: none;
+  allowtransparency: true;
+
+}
+
+
+
+
+
+
+/* thumbnails
+------------------------------------------*/
+
+
+
+.box2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em 1em 2em 1em;
+  flex-direction: center;
+  justify-content: space-between;
+  margin:0;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.box2 a {
+  margin: 1em 1em 0 0;
+  position: relative;
+  overflow:hidden;
+}
+
+.box2 span {
+  position: absolute;
+  bottom: -71px;
+  left: 0;
+  text-align: center;
+  width:100%;
+  background-color: rgba(10, 10, 10, 0.5);
+  padding: .7em 0 1.1em;
+  font-size: 1.5em;
+  transition:1s;
+
+}
+
+.box2 a:hover span {
+  bottom: 0;
+
+}
+
+@media screen and (min-width:48em) {
+  .logobox {
+    flex-wrap: wrap;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+  }
+
+}
+
+.nologo {
+  padding: .5em .5em 2em .5em;
+}
+
+.logostack {
+  padding-top: 2.5em;
+}
+
+footer {
+  padding: 2em 0;
+}
+
+.logoplace {
+  border: 2px dotted black;
+  margin-bottom: 2em;
+  margin-right: 4em;
+  margin-top: 1em;
+}
+
+
+
+
+
+
+
+
+
+/*flickity-----------------------------*/
+
+.flickity-enabled {
+  position: relative;
+}
+
+.flickity-enabled:focus {
+  outline: none;
+}
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* draggable */
+
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+
+/* ---- previous/next buttons ---- */
+
+.flickity-prev-next-button {
+  position: absolute;
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  background: hsla(0, 0%, 100%, 0.75);
+  cursor: pointer;
+  /* vertically center */
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.flickity-prev-next-button:hover {
+  background: white;
+}
+
+.flickity-prev-next-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #09F;
+}
+
+.flickity-prev-next-button:active {
+  opacity: 0.6;
+}
+
+.flickity-prev-next-button.previous {
+  left: 10px;
+}
+
+.flickity-prev-next-button.next {
+  right: 10px;
+}
+
+
+/* right to left */
+
+.flickity-rtl .flickity-prev-next-button.previous {
+  left: auto;
+  right: 10px;
+}
+
+.flickity-rtl .flickity-prev-next-button.next {
+  right: auto;
+  left: 10px;
+}
+
+.flickity-prev-next-button:disabled {
+  opacity: 0.3;
+  cursor: auto;
+}
+
+.flickity-prev-next-button svg {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+}
+
+.flickity-prev-next-button .arrow {
+  fill: #333;
+}
+
+
+/* ---- page dots ---- */
+
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+
+.flickity-rtl .flickity-page-dots {
+  direction: rtl;
+}
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 50%;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.flickity-page-dots .dot.is-selected {
+  opacity: 1;
+}
+
+
+/* Flickity responsive
+------------------------------------------*/
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.flickity img {
+  margin:0 auto;
+  display:block;
+  border: 2px solid white;
+}
+
+.flickity div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3em;
+  opacity: 70%;
+}
+
+.flickity {
+  margin-bottom: 2em;
+  height: 100%;
+}
+
+
+/* Icon Page
+------------------------------------------*/
+
+.iconcontainer {
+  background-color: white;
+  color: black;
+  text-align: left;
+  padding: 2em 2em;
+  margin:0 auto;
+}
+
+.icongreen {
+  right: 600px;
+  top:300px;
+  display:inline-block;
+  flex-wrap: wrap;
+}
+
+.iconblack {
+  right: 380px;
+  top:300px;
+  display:inline-block;
+  flex-wrap: wrap;
+}
+
+.iconsize {
+  flex-wrap: wrap;
+  display: block;
+  right:500px;
+  bottom:-430px;
+
+}
+
+/* Parallax
+------------------------------------------*/
+
+.parallax,
+.parallax2,
+.parallax3,
+.parallax4,
+.parallax5,
+.parallax6,
+.parallax7,
+.parallax8,
+.parallax9,
+.parallax10 {
+  height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.parallax {
+  background-image: url(images/oldmic.png);
+  background-position: 50% 50%;
+}
+
+.parallax2 {
+  background-image: url(images/drums.png);
+  background-position: 50% 50%;
+}
+
+.parallax3 {
+  background-image: url(images/piano.png);
+  background-position: 50% 50%;
+}
+.parallax4 {
+  background-image: url(images/sing.png);
+  background-position: 50% 50%;
+}
+
+.parallax5 {
+  background-image: url(images/band.png);
+  background-position: 50% 50%;
+}
+
+.parallax6 {
+  background-image: url(images/guitarist.png);
+  background-position: 50% 50%;
+}
+
+.parallax7 {
+  background-image: url(images/crowdy.png);
+  background-position: 50% 50%;
+}
+
+.parallax8 {
+  background-image: url(images/tomorrow.png);
+  background-position: 50% 50%;
+}
+
+.parallax9 {
+  background-image: url(images/dj.png);
+  background-position: 50% 50%;
+}
+
+.parallax10 {
+  background-image: url(images/turntable.png);
+  background-position: 50% 50%;
+}
