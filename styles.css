@@ -452,57 +452,123 @@ img {
 .parallax8,
 .parallax9,
 .parallax10 {
-  height: 500px;
+  height: 275px;
   background-size: cover;
-  background-attachment: fixed;
-
 }
 
 .parallax {
-  background-image: url(images/oldmic.png);
+  background-image: url(images/oldmic-small.png);
   background-position: 50% 50%;
 }
 
 .parallax2 {
-  background-image: url(images/drums.png);
+  background-image: url(images/drums-small.png);
   background-position: 50% 50%;
 }
 
 .parallax3 {
-  background-image: url(images/piano.png);
+  background-image: url(images/piano-small.png);
   background-position: 50% 50%;
 }
 .parallax4 {
-  background-image: url(images/sing.png);
+  background-image: url(images/sing-small.png);
   background-position: 50% 50%;
 }
 
 .parallax5 {
-  background-image: url(images/band.png);
+  background-image: url(images/band-small.png);
   background-position: 50% 50%;
 }
 
 .parallax6 {
-  background-image: url(images/guitarist.png);
+  background-image: url(images/guitarist-small.png);
   background-position: 50% 50%;
 }
 
 .parallax7 {
-  background-image: url(images/crowdy.png);
+  background-image: url(images/crowdy-small.png);
   background-position: 50% 50%;
 }
 
 .parallax8 {
-  background-image: url(images/tomorrow.png);
+  background-image: url(images/tomorrow-small.png);
   background-position: 50% 50%;
 }
 
 .parallax9 {
-  background-image: url(images/dj.png);
+  background-image: url(images/dj-small.png);
   background-position: 50% 50%;
 }
 
 .parallax10 {
-  background-image: url(images/turntable.png);
+  background-image: url(images/turntable-small.png);
   background-position: 50% 50%;
+}
+
+
+@media screen and (min-width:415px) {
+
+  .parallax,
+  .parallax2,
+  .parallax3,
+  .parallax4,
+  .parallax5,
+  .parallax6,
+  .parallax7,
+  .parallax8,
+  .parallax9,
+  .parallax10 {
+    height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .parallax {
+    background-image: url(images/oldmic.png);
+    background-position: 50% 50%;
+  }
+
+  .parallax2 {
+    background-image: url(images/drums.png);
+    background-position: 50% 50%;
+  }
+
+  .parallax3 {
+    background-image: url(images/piano.png);
+    background-position: 50% 50%;
+  }
+  .parallax4 {
+    background-image: url(images/sing.png);
+    background-position: 50% 50%;
+  }
+
+  .parallax5 {
+    background-image: url(images/band.png);
+    background-position: 50% 50%;
+  }
+
+  .parallax6 {
+    background-image: url(images/guitarist.png);
+    background-position: 50% 50%;
+  }
+
+  .parallax7 {
+    background-image: url(images/crowdy.png);
+    background-position: 50% 50%;
+  }
+
+  .parallax8 {
+    background-image: url(images/tomorrow.png);
+    background-position: 50% 50%;
+  }
+
+  .parallax9 {
+    background-image: url(images/dj.png);
+    background-position: 50% 50%;
+  }
+
+  .parallax10 {
+    background-image: url(images/turntable.png);
+    background-position: 50% 50%;
+  }
 }
